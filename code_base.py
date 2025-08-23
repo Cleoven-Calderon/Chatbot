@@ -1,17 +1,17 @@
-import gradio as gr
+import gradio as gr  # Frontend module
 import ollama
 
 MODEL = "qwen2.5-coder:3b"  # Current available models: qwen2.5-coder:3b, llama3.2:1b, qwen3:4b
 
 simple_css = """
-
-.gradio-container {
+    .gradio-container {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
     min-height: 100vh;
     padding: 20px;
 
 }
 """
+
 system_prompt = ("You are a helpful assistant that provides concise, direct answers. "
                  "Keep responses brief and to the point. Avoid unnecessary explanations and wordiness.")
 
@@ -27,7 +27,7 @@ def chat_with_ollama(message, history):
             messages.append({"role": "assistant", "content": system_prompt})
     messages.append({"role": "user", "content": message})
 
-    # Stream the response
+    # Stream the response, this creates a 'typing' effect to the Ai response
     partial_response = ""
     stream = ollama.chat(
         model=MODEL,
@@ -48,7 +48,7 @@ demo = gr.ChatInterface(
     chat_with_ollama,
     title="Qwen-Codify 2.5",
     description="Local Ai assistant feat. qwen2.5",
-    theme="soft",
+    theme="soft",  # Change to 'default' for more control
     css=simple_css,
     examples=[["Hello!"], ["How LLMs work?"], ["Need help with Python code."]],
     example_labels=[
