@@ -68,4 +68,4 @@ demo = gr.ChatInterface(
     )
 )
 
-demo.launch(share=False)
+demo.launch(share=False)  # share=True, to publicly share link, otherwise local
