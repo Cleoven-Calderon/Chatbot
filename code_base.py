@@ -1,7 +1,10 @@
 import gradio as gr  # Frontend module
 import ollama
 
-MODEL = "qwen2.5-coder:3b"  # Current available models: qwen2.5-coder:3b, llama3.2:1b, qwen3:4b
+MODEL = "qwen2.5-coder:3b"  # Example Model
+
+""" Download Ollama models on the official Ollama site.
+    Current available: *** """
 
 simple_css = """
     .gradio-container {
