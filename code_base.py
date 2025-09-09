@@ -5,8 +5,8 @@ warnings.filterwarnings("ignore")
 
 MODEL = "qwen2.5-coder:3b"  # Example Model
 
-""" Download Ollama models on the official Ollama site.
-    Current available: *** """
+""" Download Ollama models from the official Ollama site.
+    Current Model available: *** """
 
 simple_css = """
     .gradio-container {
