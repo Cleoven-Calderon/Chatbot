@@ -102,10 +102,10 @@ demo.launch(share=True)  # Change in app.py
 ```
 
 ## Custom Styling
-Edit the **|simple_css|** variable to change colors, padding, or add animations.
+Edit the **simple_css** variable to change colors, padding, or add animations.
 
 ## Adding More Examples
-Extend the examples and **|example_labels|** lists in the **|gr.ChatInterface()|** call.
+Extend the examples and **example_labels** lists in the **gr.ChatInterface()** call.
 
 ## License
-[]
+[This project is open source and free to use under the MIT License]
