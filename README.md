@@ -2,6 +2,10 @@
 
 A lightweight, local AI chatbot interface using Ollama and Gradio. This application allows you to interact with various Ollama models locally without relying on external APIs.
 
+## Screenshot
+<img width="1919" height="1079" alt="Screenshot 2025-12-05 183716" src="https://github.com/user-attachments/assets/a0aa76d8-e566-4024-8196-2989d199dbd0" />
+
+
 ## Features
 - **Local AI Processing**: Runs completely offline using Ollama
 - **Streaming Responses**: Real-time token streaming for natural conversation flow
